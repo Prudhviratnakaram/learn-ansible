@@ -7,5 +7,5 @@
       when: ansible_os_family == "RedHat"
     - name: Run if it is only debian family
       ansible.builtin.debug:
-      msg: Hello debian
+       msg: Hello debian
       when: ansible_os_family == "Debin"
