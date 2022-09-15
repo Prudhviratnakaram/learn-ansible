@@ -51,10 +51,8 @@
   hosts: all
   tasks:
     - name: Get uptime
-      ansible.builtin.debug: uptime
+      ansible.builtin.shell: uptime
       register: SHELL_OUTPUT
-
-
 
 
 
