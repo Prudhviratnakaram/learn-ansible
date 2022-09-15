@@ -23,5 +23,5 @@
         msg: URL == {{ URL }}
       #vars_files
       vars:
-        URL:task.example.com
+        URL: task.example.com
 
