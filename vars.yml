@@ -40,6 +40,13 @@
   hosts: all
   roles:
    - sample
+- name: Print fact
+  hosts: all
+  tasks:
+    - name: Print Hostname
+      ansible.builtin.debug:
+        msg: Hostname == {{ ansible_hostname }}
+
 
 
 
