@@ -4,3 +4,9 @@
     - name: print hello
       ansible.builtin.debug:
         msg: Hello how are you
+- name: myfirstplaybook 2
+  hosts: all
+  tasks:
+    - name: print hello
+      ansible.builtin.debug:
+        msg: Hello how are you
