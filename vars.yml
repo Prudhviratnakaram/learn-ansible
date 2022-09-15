@@ -47,6 +47,11 @@
       ansible.builtin.debug:
         msg: Hostname == {{ ansible_hostname }}
 
-
+- name: Print uptime
+  hosts: all
+  tasks:
+    - name: Print uptime
+      ansible.builtin.debug:
+        uptime
 
 
