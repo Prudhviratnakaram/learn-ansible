@@ -8,19 +8,6 @@
       - bananna
       - apple
 
-    - name: fruit name with quantity
-      ansible.builtin.debug:
-         msg: Fruit Name = {{ item.name }} ,quantity = {{ item.qty }}
-         loop:
-           - { name: bananna ,qty: 100}
-           - { name: apple ,qty: 200}
-    - name: place the item of current line in variable
-      ansible.builtin.Shell: echo "{{ item }}"
-      loop:
-        -one
-        -two
-      register: echo
-      changed_when: item == "one"
 
 
 
