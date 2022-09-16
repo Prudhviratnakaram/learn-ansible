@@ -15,7 +15,7 @@
            - { name: bananna ,qty: 100}
            - { name: apple ,qty: 200}
     - name: place the item of current line in variable
-      ansible.builtin.Shell: echo "{{ item }}"
+      ansible.builtin.shell: echo "{{ item }}"
       loop:
         -one
         -two
