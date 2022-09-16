@@ -11,8 +11,8 @@
       ansible.builtin.debug:
         msg: Fruit Name = {{ item.name }}, Quantity = {{ item.qty }}
       loop:
-          - { name: bananna ,qty: 100}
-          - { name: apple ,qty: 200}
+          - { name: bananna, qty: 100 }
+          - { name: apple, qty: 200 }
     - name: place the item of current line in variable
       ansible.builtin.shell: echo "{{ item }}"
       loop:
