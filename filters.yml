@@ -1,7 +1,9 @@
 - name: Demo on filters
   hosts: all
   tasks:
-
+    - name: print lower case
+      ansible.builtin.debug:
+        msg: "{{ NAME | lower }}"
     - name: print message when x is greater than 5
       ansible.builtin.debug:
         msg: X is greater than 5
