@@ -1,0 +1,8 @@
+- name: Demo on filters
+  hosts: all
+  tasks:
+    - name: print lower case
+      ansible.builtin.debug:
+        msg: "{{ NAME | lower }}"
+
+
